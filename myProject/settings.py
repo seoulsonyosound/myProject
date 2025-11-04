@@ -29,7 +29,6 @@ ALLOWED_HOSTS = ['https://peitel-backend-alejos.onrender.com', 'peitel-backend-a
 
 CSRF_TRUSTED_ORIGINS = [
     "https://peitel-backend-alejos.onrender.com",
-    "peitel-backend-alejos.onrender.com",
 ]
 
 # Application definition
