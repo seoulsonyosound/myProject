@@ -96,7 +96,7 @@ def logout_view(request):
 def login_required_view(fn):
     def wrapper(request, *args, **kwargs):
         if not request.session.get('user_id'):
-            return redirect(f"{reverse('registration:login_html')}?next={request.path}")
+            return redirect(f"{reverse('registration:login_page')}?next={request.path}")
         return fn(request, *args, **kwargs)
     wrapper.__name__ = fn.__name__
     return wrapper
